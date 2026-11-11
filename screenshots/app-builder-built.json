@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "نونة | أحكام النون الساكنة",
+      "hasCanvas": false,
+      "bodyTextLen": 1446,
+      "bodyTextHash": "29ae9efa6a64e0d482eb07012a1932100949d0cbd86e631486d49eead21b506a",
+      "bodyTextPrefix": "حفص عن عاصم · طريق الشاطبية نونة المجلس الشرح التدريب مع نونة مش",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "نونة | أحكام النون الساكنة",
+      "hasCanvas": false,
+      "bodyTextLen": 1446,
+      "bodyTextHash": "0bbf98840e894af12a707a59444d105690385162402c5ef49f70aabf3d48d76d",
+      "bodyTextPrefix": "حفص عن عاصم · طريق الشاطبية نونة مشروع تطبيقي · تعليم التجويد · ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

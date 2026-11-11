@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Readex Pro", "Segoe UI", sans-serif;
+  --font-display: "Amiri", "Amiri Quran", serif;
+  --font-quran: "Amiri Quran", "Amiri", serif;
+
+  --color-parchment: #f3eadb;
+  --color-paper: #fffaf3;
+  --color-ink: #1c241f;
+  --color-muted: #6b6258;
+  --color-line: #e4d5bf;
+  --color-emerald: #1e4a3a;
+  --color-emerald-deep: #143328;
+  --color-emerald-soft: #e6f0ea;
+  --color-on-emerald: #f7f3ea;
+  --color-gold: #8a6424;
+  --color-gold-soft: #f4e6c8;
+  --color-clay: #7a332c;
+  --color-clay-soft: #f8e8e4;
+
+  --radius-card: 1.25rem;
+  --radius-control: 0.9rem;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background:
+      radial-gradient(900px 420px at 100% -10%, color-mix(in oklab, var(--color-gold) 22%, transparent), transparent 55%),
+      var(--color-parchment);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled),
+  summary {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-emerald);
+    outline-offset: 3px;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+    line-height: 1.25;
+  }
+}
+
+@layer components {
+  .quran {
+    font-family: var(--font-quran);
+    font-size: 1.65rem;
+    line-height: 2.35;
+    text-wrap: pretty;
+  }
+
+  .amiri {
+    font-family: var(--font-display);
+  }
+
+  .mark-noon {
+    background: var(--color-gold-soft);
+    color: inherit;
+    border-radius: 0.45rem;
+    box-decoration-break: clone;
+    padding-inline: 0.12em;
+  }
+
+  .panel {
+    background: var(--color-paper);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-card);
+    box-shadow: 0 16px 40px color-mix(in oklab, var(--color-ink) 6%, transparent);
+  }
+
+  .bubble-noona {
+    background: var(--color-emerald-soft);
+    color: var(--color-ink);
+    border-radius: 1.15rem 1.15rem 0.4rem 1.15rem;
+  }
+
+  .bubble-me {
+    background: var(--color-emerald);
+    color: var(--color-on-emerald);
+    border-radius: 1.15rem 1.15rem 1.15rem 0.4rem;
+  }
+
+  @media (min-width: 768px) {
+    .quran {
+      font-size: 2rem;
+      line-height: 2.45;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
